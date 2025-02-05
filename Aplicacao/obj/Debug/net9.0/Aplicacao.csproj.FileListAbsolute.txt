@@ -1,0 +1,15 @@
+C:\Users\caiow\source\repos\Monitoramento\Aplicacao\bin\Debug\net9.0\Aplicacao.deps.json
+C:\Users\caiow\source\repos\Monitoramento\Aplicacao\bin\Debug\net9.0\Aplicacao.dll
+C:\Users\caiow\source\repos\Monitoramento\Aplicacao\bin\Debug\net9.0\Aplicacao.pdb
+C:\Users\caiow\source\repos\Monitoramento\Aplicacao\bin\Debug\net9.0\Dominio.dll
+C:\Users\caiow\source\repos\Monitoramento\Aplicacao\bin\Debug\net9.0\Dominio.pdb
+C:\Users\caiow\source\repos\Monitoramento\Aplicacao\obj\Debug\net9.0\Aplicacao.csproj.AssemblyReference.cache
+C:\Users\caiow\source\repos\Monitoramento\Aplicacao\obj\Debug\net9.0\Aplicacao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\caiow\source\repos\Monitoramento\Aplicacao\obj\Debug\net9.0\Aplicacao.AssemblyInfoInputs.cache
+C:\Users\caiow\source\repos\Monitoramento\Aplicacao\obj\Debug\net9.0\Aplicacao.AssemblyInfo.cs
+C:\Users\caiow\source\repos\Monitoramento\Aplicacao\obj\Debug\net9.0\Aplicacao.csproj.CoreCompileInputs.cache
+C:\Users\caiow\source\repos\Monitoramento\Aplicacao\obj\Debug\net9.0\Aplicacao.csproj.Up2Date
+C:\Users\caiow\source\repos\Monitoramento\Aplicacao\obj\Debug\net9.0\Aplicacao.dll
+C:\Users\caiow\source\repos\Monitoramento\Aplicacao\obj\Debug\net9.0\refint\Aplicacao.dll
+C:\Users\caiow\source\repos\Monitoramento\Aplicacao\obj\Debug\net9.0\Aplicacao.pdb
+C:\Users\caiow\source\repos\Monitoramento\Aplicacao\obj\Debug\net9.0\ref\Aplicacao.dll

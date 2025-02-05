@@ -1,0 +1,62 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\caiow\\source\\repos\\Monitoramento\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E7C7A46B-5A1E-46A5-9759-496FC2C2C9E5}|Monitoramento\\Monitoramento.csproj|c:\\users\\caiow\\source\\repos\\monitoramento\\monitoramento\\controllers\\monitoramentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7C7A46B-5A1E-46A5-9759-496FC2C2C9E5}|Monitoramento\\Monitoramento.csproj|solutionrelative:monitoramento\\controllers\\monitoramentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7C7A46B-5A1E-46A5-9759-496FC2C2C9E5}|Monitoramento\\Monitoramento.csproj|c:\\users\\caiow\\source\\repos\\monitoramento\\monitoramento\\controllers\\configuracaosistemacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7C7A46B-5A1E-46A5-9759-496FC2C2C9E5}|Monitoramento\\Monitoramento.csproj|solutionrelative:monitoramento\\controllers\\configuracaosistemacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConfiguracaoSistemaController.cs",
+              "DocumentMoniker": "C:\\Users\\caiow\\source\\repos\\Monitoramento\\Monitoramento\\Controllers\\ConfiguracaoSistemaController.cs",
+              "RelativeDocumentMoniker": "Monitoramento\\Controllers\\ConfiguracaoSistemaController.cs",
+              "ToolTip": "C:\\Users\\caiow\\source\\repos\\Monitoramento\\Monitoramento\\Controllers\\ConfiguracaoSistemaController.cs",
+              "RelativeToolTip": "Monitoramento\\Controllers\\ConfiguracaoSistemaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T17:37:02.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MonitoramentoController.cs",
+              "DocumentMoniker": "C:\\Users\\caiow\\source\\repos\\Monitoramento\\Monitoramento\\Controllers\\MonitoramentoController.cs",
+              "RelativeDocumentMoniker": "Monitoramento\\Controllers\\MonitoramentoController.cs",
+              "ToolTip": "C:\\Users\\caiow\\source\\repos\\Monitoramento\\Monitoramento\\Controllers\\MonitoramentoController.cs",
+              "RelativeToolTip": "Monitoramento\\Controllers\\MonitoramentoController.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAnwK8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T17:08:13.426Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

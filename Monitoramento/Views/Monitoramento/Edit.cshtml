@@ -1,0 +1,74 @@
+﻿@using MonitorDeServicos.Dominio.Enumerador
+@model MonitorDeServicos.Dominio.Entidade.Monitoramento
+
+@{
+    ViewData["Title"] = "Edição do Serviço";
+}
+
+<div class="container mt-4">
+    <h1 class="text-center mb-4">Editar Monitoramento</h1>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="Edit" class="card shadow p-4">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Nome" class="form-label fw-bold">Nome</label>
+                    <input asp-for="Nome" class="form-control" />
+                    <span asp-validation-for="Nome" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Tipo" class="form-label fw-bold">Tipo</label>
+                    @Html.DropDownListFor(
+                             model => model.Tipo,
+                             new SelectList(Enum.GetValues(typeof(TipoDeMonitoramento))),
+                             "-- Selecione --",
+                             new { @class = "form-control" })
+                    <span asp-validation-for="Tipo" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Endereco" class="form-label fw-bold">Endereço</label>
+                    <input asp-for="Endereco" class="form-control" />
+                    <span asp-validation-for="Endereco" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="WebhookIds" class="control-label fw-bold">Webhooks</label>
+                    @Html.ListBoxFor(
+                             model => model.WebhookIds,
+                             new MultiSelectList(ViewBag.Webhooks, "Id", "Nome"),
+                             new { @class = "form-control" }
+                             )
+                    <span asp-validation-for="WebhookIds" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label class="form-label fw-bold" for="Ativo">@Html.DisplayNameFor(model => model.Ativo)</label>
+                    <select asp-for="Ativo" class="form-control">
+                        <option value="true">Sim</option>
+                        <option value="false">Não</option>
+                    </select>
+                </div>
+
+                <input type="hidden" asp-for="Id" />
+
+                <div class="form-group d-grid">
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="text-center mt-3">
+        <a asp-action="Index" class="btn btn-secondary">Voltar à Lista</a>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

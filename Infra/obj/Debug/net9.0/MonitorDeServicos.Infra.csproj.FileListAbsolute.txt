@@ -1,0 +1,15 @@
+C:\Users\caiow\source\repos\Monitoramento\Infra\bin\Debug\net9.0\MonitorDeServicos.Infra.deps.json
+C:\Users\caiow\source\repos\Monitoramento\Infra\bin\Debug\net9.0\MonitorDeServicos.Infra.dll
+C:\Users\caiow\source\repos\Monitoramento\Infra\bin\Debug\net9.0\MonitorDeServicos.Infra.pdb
+C:\Users\caiow\source\repos\Monitoramento\Infra\bin\Debug\net9.0\MonitorDeServicos.Dominio.dll
+C:\Users\caiow\source\repos\Monitoramento\Infra\bin\Debug\net9.0\MonitorDeServicos.Dominio.pdb
+C:\Users\caiow\source\repos\Monitoramento\Infra\obj\Debug\net9.0\MonitorDeServicos.Infra.csproj.AssemblyReference.cache
+C:\Users\caiow\source\repos\Monitoramento\Infra\obj\Debug\net9.0\MonitorDeServicos.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\caiow\source\repos\Monitoramento\Infra\obj\Debug\net9.0\MonitorDeServicos.Infra.AssemblyInfoInputs.cache
+C:\Users\caiow\source\repos\Monitoramento\Infra\obj\Debug\net9.0\MonitorDeServicos.Infra.AssemblyInfo.cs
+C:\Users\caiow\source\repos\Monitoramento\Infra\obj\Debug\net9.0\MonitorDeServicos.Infra.csproj.CoreCompileInputs.cache
+C:\Users\caiow\source\repos\Monitoramento\Infra\obj\Debug\net9.0\MonitorD.2AA72373.Up2Date
+C:\Users\caiow\source\repos\Monitoramento\Infra\obj\Debug\net9.0\MonitorDeServicos.Infra.dll
+C:\Users\caiow\source\repos\Monitoramento\Infra\obj\Debug\net9.0\refint\MonitorDeServicos.Infra.dll
+C:\Users\caiow\source\repos\Monitoramento\Infra\obj\Debug\net9.0\MonitorDeServicos.Infra.pdb
+C:\Users\caiow\source\repos\Monitoramento\Infra\obj\Debug\net9.0\ref\MonitorDeServicos.Infra.dll

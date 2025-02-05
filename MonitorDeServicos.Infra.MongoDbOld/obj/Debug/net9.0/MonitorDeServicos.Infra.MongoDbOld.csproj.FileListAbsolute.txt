@@ -1,0 +1,15 @@
+C:\Users\caiow\source\repos\Monitoramento\MonitorDeServicos.Infra.MongoDbOld\bin\Debug\net9.0\MonitorDeServicos.Infra.MongoDbOld.deps.json
+C:\Users\caiow\source\repos\Monitoramento\MonitorDeServicos.Infra.MongoDbOld\bin\Debug\net9.0\MonitorDeServicos.Infra.MongoDbOld.dll
+C:\Users\caiow\source\repos\Monitoramento\MonitorDeServicos.Infra.MongoDbOld\bin\Debug\net9.0\MonitorDeServicos.Infra.MongoDbOld.pdb
+C:\Users\caiow\source\repos\Monitoramento\MonitorDeServicos.Infra.MongoDbOld\bin\Debug\net9.0\MonitorDeServicos.Dominio.dll
+C:\Users\caiow\source\repos\Monitoramento\MonitorDeServicos.Infra.MongoDbOld\bin\Debug\net9.0\MonitorDeServicos.Dominio.pdb
+C:\Users\caiow\source\repos\Monitoramento\MonitorDeServicos.Infra.MongoDbOld\obj\Debug\net9.0\MonitorDeServicos.Infra.MongoDbOld.csproj.AssemblyReference.cache
+C:\Users\caiow\source\repos\Monitoramento\MonitorDeServicos.Infra.MongoDbOld\obj\Debug\net9.0\MonitorDeServicos.Infra.MongoDbOld.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\caiow\source\repos\Monitoramento\MonitorDeServicos.Infra.MongoDbOld\obj\Debug\net9.0\MonitorDeServicos.Infra.MongoDbOld.AssemblyInfoInputs.cache
+C:\Users\caiow\source\repos\Monitoramento\MonitorDeServicos.Infra.MongoDbOld\obj\Debug\net9.0\MonitorDeServicos.Infra.MongoDbOld.AssemblyInfo.cs
+C:\Users\caiow\source\repos\Monitoramento\MonitorDeServicos.Infra.MongoDbOld\obj\Debug\net9.0\MonitorDeServicos.Infra.MongoDbOld.csproj.CoreCompileInputs.cache
+C:\Users\caiow\source\repos\Monitoramento\MonitorDeServicos.Infra.MongoDbOld\obj\Debug\net9.0\MonitorD.489E54D5.Up2Date
+C:\Users\caiow\source\repos\Monitoramento\MonitorDeServicos.Infra.MongoDbOld\obj\Debug\net9.0\MonitorDeServicos.Infra.MongoDbOld.dll
+C:\Users\caiow\source\repos\Monitoramento\MonitorDeServicos.Infra.MongoDbOld\obj\Debug\net9.0\refint\MonitorDeServicos.Infra.MongoDbOld.dll
+C:\Users\caiow\source\repos\Monitoramento\MonitorDeServicos.Infra.MongoDbOld\obj\Debug\net9.0\MonitorDeServicos.Infra.MongoDbOld.pdb
+C:\Users\caiow\source\repos\Monitoramento\MonitorDeServicos.Infra.MongoDbOld\obj\Debug\net9.0\ref\MonitorDeServicos.Infra.MongoDbOld.dll

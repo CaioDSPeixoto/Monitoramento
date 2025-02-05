@@ -1,0 +1,54 @@
+﻿@model MonitorDeServicos.Dominio.Entidade.ConfiguracaoSistema
+
+@{
+    ViewData["Title"] = "Detalhes da Configuração";
+}
+
+<div class="container mt-4">
+    <h1 class="text-center mb-4">Configurações do Sistema</h1>
+
+    <div class="card shadow-sm p-3">
+        <div class="row mb-3">
+            <!-- Intervalo em Minutos -->
+            <div class="col-sm-4">
+                <label for="IntervaloMinutos" class="fw-bold">Intervalo em Minutos:</label>
+                <input type="number" id="IntervaloMinutos" class="form-control" value="@Model.IntervaloMinutos" disabled />
+            </div>
+
+            <!-- Qtd. falhas para Notificar -->
+            <div class="col-sm-4">
+                <label for="FalhasParaNotificacao" class="fw-bold">Qtd. falhas para Notificar:</label>
+                <input type="number" id="FalhasParaNotificacao" class="form-control" value="@Model.FalhasParaNotificacao" disabled />
+            </div>
+
+            <!-- Rodar consulta em segundo plano -->
+            <div class="col-sm-4">
+                <label for="RodarEmSegundoPlano" class="fw-bold">Execução em segundo plano:</label>
+                <div class="form-check">
+                    <input type="checkbox" id="RodarEmSegundoPlano" class="form-check-input" @(Model.ExecutarEmSegundoPlano ? "checked" : "") disabled />
+
+                    <!-- Mensagem condicionada ao estado do checkbox -->
+                    <div class="mt-2">
+                        @if (Model.ExecutarEmSegundoPlano)
+                        {
+                            <div class="alert alert-success" role="alert">
+                                A consulta será executada em segundo plano.
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="alert alert-danger" role="alert">
+                                A consulta não será executada em segundo plano. Apenas por <a asp-controller="Monitoramento" asp-action="Dashboard"> essa tela.</a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-primary px-4">Editar</a>
+        <a asp-controller="Monitoramento" asp-action="Dashboard" class="btn btn-secondary px-4 ms-2">Voltar</a>
+    </div>
+</div>

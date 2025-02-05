@@ -1,0 +1,35 @@
+﻿@model MonitorDeServicos.Dominio.Entidade.Webhook
+
+@{
+    ViewData["Title"] = "Detalhes do Webhook";
+}
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Detalhes do Webhook</h1>
+
+    <div class="card shadow p-4">
+        <h4 class="mb-3">Informações do Webhook</h4>
+        <dl class="row">
+            <dt class="col-sm-4 fw-bold">Nome</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.Nome)</dd>
+
+            <dt class="col-sm-4 fw-bold">Nome do Responsável</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.NomeResponsavel)</dd>
+
+            <dt class="col-sm-4 fw-bold">URL</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.Url)</dd>
+
+            <dt class="col-sm-4">Ativo</dt>
+            <dd class="col-sm-8">
+                <span class="badge @(Model.Ativo ? "bg-success" : "bg-danger")">
+                    @(Model.Ativo ? "Ativo" : "Inativo")
+                </span>
+            </dd>
+        </dl>
+    </div>
+
+    <div class="text-center mt-4">
+        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-primary px-4">Editar</a>
+        <a asp-action="Index" class="btn btn-secondary px-4 ms-2">Voltar à Lista</a>
+    </div>
+</div>

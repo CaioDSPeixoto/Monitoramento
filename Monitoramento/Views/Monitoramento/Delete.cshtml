@@ -1,0 +1,46 @@
+﻿@model MonitorDeServicos.Dominio.Entidade.Monitoramento
+
+@{
+    ViewData["Title"] = "Deletar Serviço";
+}
+
+<div class="container mt-4">
+    <h1 class="text-center mb-4">Excluir Monitoramento</h1>
+
+    <div class="alert alert-warning text-center">
+        <h4>Tem certeza de que deseja excluir este monitoramento?</h4>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header bg-danger text-white">
+            Detalhes do Monitoramento
+        </div>
+        <div class="card-body">
+            <dl class="row mb-0">
+                <dt class="col-sm-4">Nome</dt>
+                <dd class="col-sm-8">@Html.DisplayFor(model => model.Nome)</dd>
+
+                <dt class="col-sm-4">Tipo</dt>
+                <dd class="col-sm-8">@Html.DisplayFor(model => model.Tipo)</dd>
+
+                <dt class="col-sm-4">Endereço</dt>
+                <dd class="col-sm-8">@Html.DisplayFor(model => model.Endereco)</dd>
+
+                <dt class="col-sm-4">Ativo</dt>
+                <dd class="col-sm-8">
+                    <span class="badge @(Model.Ativo ? "bg-success" : "bg-danger")">
+                        @(Model.Ativo ? "Ativo" : "Inativo")
+                    </span>
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-between">
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="Id" />
+            <button type="submit" class="btn btn-danger">Excluir</button>
+        </form>
+        <a asp-action="Index" class="btn btn-secondary">Voltar para a Lista</a>
+    </div>
+</div>

@@ -1,0 +1,117 @@
+﻿@using MonitorDeServicos.Dominio.Enumerador
+@using System.Reflection
+@using System.ComponentModel.DataAnnotations
+@model MonitorDeServicos.Dominio.Entidade.Monitoramento
+
+@{
+    ViewData["Title"] = "Novo Serviço";
+}
+
+<div class="container mt-4">
+    <h1 class="text-center mb-4">Criar Novo Serviço</h1>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="Create" class="card shadow p-4">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                <!-- Campo Nome do Serviço -->
+                <div class="form-group mb-3">
+                    <label asp-for="Nome" class="form-label fw-bold"></label>
+                    <input asp-for="Nome" class="form-control" />
+                    <span asp-validation-for="Nome" class="text-danger"></span>
+                </div>
+
+                <!-- Campo Tipo de Serviço -->
+                <div class="form-group mb-3">
+                    <label asp-for="Tipo" class="form-label fw-bold"></label>
+                    @Html.DropDownListFor(
+                             model => model.Tipo,
+                             new SelectList(
+                             Enum.GetValues(typeof(TipoDeMonitoramento))
+                             .Cast<TipoDeMonitoramento>()
+                             .Select(e => new
+                             {
+                                 Value = e,
+                                 Text = e.GetType()
+                             .GetMember(e.ToString())
+                             .First()
+                             .GetCustomAttribute<DisplayAttribute>()
+                             ?.Name ?? e.ToString()
+                             }),
+                             "Value", "Text"),
+                             "-- Selecione --",
+                             new { @class = "form-control", id = "TipoDeMonitoramento" })
+                    <span asp-validation-for="Tipo" class="text-danger"></span>
+                </div>
+
+                <!-- Campo Endereço (URL) -->
+                <div class="form-group mb-3" id="enderecoGroup">
+                    <label asp-for="Endereco" class="form-label fw-bold" id="enderecoLabel"></label>
+                    <input asp-for="Endereco" class="form-control" />
+                    <span asp-validation-for="Endereco" class="text-danger"></span>
+                </div>
+
+                <!-- Campo para vincular os webhooks -->
+                <div class="form-group mb-3">
+                    <label for="WebhookIds" class="form-label fw-bold">Vincular Webhooks (1 ou vários)</label>
+                    @Html.ListBoxFor(
+                             model => model.WebhookIds,
+                             new MultiSelectList(ViewBag.Webhooks, "Id", "Nome"),
+                             new { @class = "form-control" }
+                             )
+                </div>
+
+                <!-- Campo de ativo -->
+                <div class="form-group mb-3">
+                    <label class="form-label fw-bold" for="Ativo">@Html.DisplayNameFor(model => model.Ativo)</label>
+                    <select asp-for="Ativo" class="form-control">
+                        <option value="true">Sim</option>
+                        <option value="false">Não</option>
+                    </select>
+                </div>
+
+                <div class="form-group d-grid">
+                    <button type="submit" class="btn btn-primary">Criar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="text-center mt-3">
+        <a asp-action="Index" class="btn btn-secondary">Voltar à Lista</a>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const tipoDropdown = document.getElementById("TipoDeMonitoramento");
+                const enderecoLabel = document.getElementById("enderecoLabel");
+
+               const enderecoDisplayName = "@Html.Raw(Html.DisplayNameFor(model => model.Endereco))";
+                const tipoAplicacao = tipoDropdown.querySelector("option[value='Aplicacao']").value;
+
+                function updateLabel() {
+                    const selectedValue = tipoDropdown.value;
+
+                     if (selectedValue === "") {
+                        return;
+                    }
+
+                    if (selectedValue !== tipoAplicacao) {
+                        enderecoLabel.innerText = "String de Conexão";
+                    } else {
+                        enderecoLabel.innerText = enderecoDisplayName;
+                    }
+                }
+
+                updateLabel();
+                tipoDropdown.addEventListener("change", updateLabel);
+            });
+        </script>
+    }
+}

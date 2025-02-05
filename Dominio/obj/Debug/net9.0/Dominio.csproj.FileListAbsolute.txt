@@ -1,0 +1,12 @@
+C:\Users\caiow\source\repos\Monitoramento\Dominio\bin\Debug\net9.0\Dominio.deps.json
+C:\Users\caiow\source\repos\Monitoramento\Dominio\bin\Debug\net9.0\Dominio.dll
+C:\Users\caiow\source\repos\Monitoramento\Dominio\bin\Debug\net9.0\Dominio.pdb
+C:\Users\caiow\source\repos\Monitoramento\Dominio\obj\Debug\net9.0\Dominio.csproj.AssemblyReference.cache
+C:\Users\caiow\source\repos\Monitoramento\Dominio\obj\Debug\net9.0\Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\caiow\source\repos\Monitoramento\Dominio\obj\Debug\net9.0\Dominio.AssemblyInfoInputs.cache
+C:\Users\caiow\source\repos\Monitoramento\Dominio\obj\Debug\net9.0\Dominio.AssemblyInfo.cs
+C:\Users\caiow\source\repos\Monitoramento\Dominio\obj\Debug\net9.0\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\caiow\source\repos\Monitoramento\Dominio\obj\Debug\net9.0\Dominio.dll
+C:\Users\caiow\source\repos\Monitoramento\Dominio\obj\Debug\net9.0\refint\Dominio.dll
+C:\Users\caiow\source\repos\Monitoramento\Dominio\obj\Debug\net9.0\Dominio.pdb
+C:\Users\caiow\source\repos\Monitoramento\Dominio\obj\Debug\net9.0\ref\Dominio.dll

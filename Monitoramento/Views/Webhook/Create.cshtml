@@ -1,0 +1,57 @@
+﻿@model MonitorDeServicos.Dominio.Entidade.Webhook
+
+@{
+    ViewData["Title"] = "Criar Webhook";
+}
+
+<div class="container mt-4">
+    <h1 class="text-center mb-4">Criar Webhook</h1>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="Create" class="card shadow p-4">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Nome" class="form-label fw-bold">Nome</label>
+                    <input asp-for="Nome" class="form-control" placeholder="Digite o nome do webhook" />
+                    <span asp-validation-for="Nome" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="NomeResponsavel" class="form-label fw-bold">Nome do Responsável</label>
+                    <input asp-for="NomeResponsavel" class="form-control" placeholder="Digite o nome do responsável" />
+                    <span asp-validation-for="NomeResponsavel" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Url" class="form-label fw-bold">URL</label>
+                    <input asp-for="Url" class="form-control" placeholder="Digite a URL do webhook" />
+                    <span asp-validation-for="Url" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label class="form-label fw-bold" for="Ativo">@Html.DisplayNameFor(model => model.Ativo)</label>
+                    <select asp-for="Ativo" class="form-control">
+                        <option value="true">Sim</option>
+                        <option value="false">Não</option>
+                    </select>
+                </div>
+
+                <div class="form-group d-grid">
+                    <button type="submit" class="btn btn-primary">Criar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="text-center mt-3">
+        <a asp-action="Index" class="btn btn-secondary">Voltar à Lista</a>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,52 @@
+﻿@model IEnumerable<MonitorDeServicos.Dominio.Entidade.LogMonitoramento>
+
+@{
+    ViewData["Title"] = "Lista de Logs de Monitoramento";
+}
+<div class="text-center mb-5">
+    <h2 class="text-center mb-4">Logs de Monitoramento (Ultimos 10 registros)</h2>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th scope="col">@Html.DisplayNameFor(model => model.First().DataHora)</th>
+                <th scope="col">@Html.DisplayNameFor(model => model.First().TempoExecucao)</th>
+                <th scope="col">@Html.DisplayNameFor(model => model.First().Ativo)</th>
+                <th scope="col">@Html.DisplayNameFor(model => model.First().Mensagem)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.DataHora)</td>
+                        <td>@Html.DisplayFor(modelItem => item.TempoExecucao)</td>
+                        <td>
+                            @if (item.Ativo.HasValue)
+                            {
+                                <span class="badge @(item.Ativo.Value ? "bg-success" : "bg-danger")">
+                                    @(item.Ativo.Value ? "Sucesso" : "Falha")
+                                </span>
+                            }
+                        </td>
+                        <td>@Html.DisplayFor(modelItem => item.Mensagem)</td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="4" class="text-center text-muted">Nenhum log de monitoramento registrado.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="d-flex justify-content-between mt-3">
+        <a asp-controller="Monitoramento" asp-action="Dashboard" class="btn btn-secondary">Voltar para a Lista</a>
+    </div>
+</div>

@@ -1,0 +1,66 @@
+﻿@model MonitorDeServicos.Dominio.Entidade.ConfiguracaoSistema
+
+@{
+    ViewData["Title"] = "Editar Configuração do Sistema";
+}
+
+<div class="container mt-4">
+    <h1 class="text-center mb-4">Editar Configuração do Sistema</h1>
+
+    <div class="card shadow-sm p-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+            <div class="row mb-3">
+                <!-- Intervalo em Minutos -->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label asp-for="IntervaloMinutos" class="control-label">Intervalo em Minutos:</label>
+                        <input asp-for="IntervaloMinutos" class="form-control" />
+                        <span asp-validation-for="IntervaloMinutos" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <!-- Qtd. falhas para Notificar -->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label asp-for="FalhasParaNotificacao" class="control-label">Qtd. de Falhas para Notificação:</label>
+                        <input asp-for="FalhasParaNotificacao" class="form-control" />
+                        <span asp-validation-for="FalhasParaNotificacao" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <!-- Rodar consulta em segundo plano -->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label asp-for="ExecutarEmSegundoPlano" class="control-label">Rodar consulta em segundo plano?</label>
+                        <select asp-for="ExecutarEmSegundoPlano" class="form-control">
+                            <option value="true">Sim</option>
+                            <option value="false">Não</option>
+                        </select>
+                        <span asp-validation-for="ExecutarEmSegundoPlano" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hidden Id -->
+            <input type="hidden" asp-for="Id" />
+
+            <!-- Botão de Submissão -->
+            <div class="form-group text-center">
+                <input type="submit" value="Salvar" class="btn btn-primary btn-lg" />
+            </div>
+        </form>
+    </div>
+
+    <!-- Botão de Voltar -->
+    <div class="text-center mt-4">
+        <a asp-action="Index" class="btn btn-secondary btn-lg">Voltar para a Lista</a>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
